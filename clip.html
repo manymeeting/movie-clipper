@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="clipper.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="clipper.js"></script>
+
+</head>
+<body>
+	
+    <div id="wrapper">
+        <div id="title-div">
+            <h1>Movie Clipper</h1>
+        </div>
+
+        <div id="leftRow">
+            <p>
+                File Path:
+            </p>
+            <textarea id="filePathInput" rows="5" style="width:300px; height:100px"></textarea>
+            <p>
+                Output Path:
+            </p>
+            <textarea id="filePathOutput" rows="5" style="width:300px; height:100px"></textarea> 
+            <div id="timeDiv" style="margin-top:20px;">
+                <p>
+                Start Time:
+                </p>
+                <span> H: <input type="text" id="startTimeH" name="startHour" maxlength="2" style="width:40px; height:50px; font-size:28px;"/></span>
+                <span> M: <input type="text" id="startTimeM" name="startMin" maxlength="2" style="width:40px; height:50px; font-size:28px;"/></span>
+                <span> S: <input type="text" id="startTimeS" name="startSec" maxlength="2" style="width:40px; height:50px; font-size:28px;"/></span>
+                <p>
+                End Time:
+                </p>
+                <span> H: <input type="text" id="endTimeH" name="ensHour" maxlength="2" style="width:40px; height:50px; font-size:28px;"/></span>
+                <span> M: <input type="text" id="endTimeM" name="endMin" maxlength="2" style="width:40px; height:50px; font-size:28px;"/></span>
+                <span> S: <input type="text" id="endTimeS" name="ensSec" maxlength="2" style="width:40px; height:50px; font-size:28px;"/></span>
+            </div> 
+            <a href="javascript:void(0)" id="doClickBtn" onclick="clip();">Clip Start</a>
+        </div>
+
+        <div id="rightRow">
+            <textarea id="commandOutput" rows="5" style="width:300px; height:300px"></textarea>  
+        </div>
+    </div>
+
+
+</body>
+
+</html>
